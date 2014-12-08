@@ -19,3 +19,7 @@ SHOW PRODUCT DETAILS
 <p>
   <strong>Updated At</strong>: <%= @product.updated_at %>
 </p>
+
+<%= link_to "All Products", root_path %>
+<%= link_to "Edit", edit_product_path(@product) %>
+<%= link_to "Delete", product_path(@product), method: :delete, data:{confirm: "Are you sure?"} %>
